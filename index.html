@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Rakesh Calculator</title>
+    <title>Rakesh Calculator - Free Online Calculator</title>
+
+<meta name="description"
+content="Rakesh Calculator is a free online calculator for addition, subtraction, multiplication and division.">
+
+<meta name="keywords"
+content="Rakesh Calculator, Calculator, Online Calculator, Free Calculator">
+</head>
+<body>
+    <h1>Rakesh Calculator</h1>
+
+    <input type="number" id="num1">
+    <input type="number" id="num2">
+
+    <button onclick="add()">Add</button>
+
+    <h2 id="result"></h2>
+
+    <script>
+        function add() {
+            let a = Number(document.getElementById("num1").value);
+            let b = Number(document.getElementById("num2").value);
+
+            document.getElementById("result").innerHTML =
+                "Result = " + (a + b);
+        }
+    </script>
+</body>
+</html>
